@@ -1,11 +1,14 @@
-import prompt from 'prompt-sync'
+
+import prompt from "prompt-sync";
 let ler = prompt();
 
-console.log('Informe o numero:');
-let n1 = Number(ler());
-
-function mult(a) {
-    return a * 3;
+function calcularTriplo(numero) {
+    return numero * 3;
 }
 
-console.log("O dobro é " + n1 * 3 );
+console.log("Informe um número:");
+let numero = Number(ler());
+
+let triplo = calcularTriplo(numero);
+
+console.log("O triplo de " + numero + " é " + triplo);

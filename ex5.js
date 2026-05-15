@@ -1,14 +1,13 @@
-import prompt from 'prompt-sync'
+import prompt from "prompt-sync";
 let ler = prompt();
 
-console.log('Informe a base:');
-let n1 = Number(ler());
-
-console.log('Informe a altura:');
-let n2 = Number(ler());
-
-function mult( n1, n2) {
-    return n1 * n2;
+function calcularAreaQuadrado(lado) {
+    return lado * lado;
 }
 
-console.log("A area é " + n1 * n2 / 2 );
+console.log("Informe o lado do quadrado:");
+let lado = Number(ler());
+
+let area = calcularAreaQuadrado(lado);
+
+console.log("A área do quadrado é " + area);

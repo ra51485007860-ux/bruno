@@ -1,16 +1,16 @@
-import prompt from 'prompt-sync'
+import prompt from "prompt-sync";
 let ler = prompt();
 
-console.log('Informe o primeiro numero:');
-let n1 = Number(ler());
-
-console.log('Informe o segundo numero:');
-let n2 = Number(ler());
-
-function soma(a, b) {
-    return a + b;
+function somar(n1, n2) {
+    return n1 + n2;
 }
 
-let resultado = soma(n1, n2);
+console.log("Primeiro número:");
+let n1 = Number(ler());
 
-console.log("A soma de " + n1 + " + " + n2 + " é " + resultado);
+console.log("Segundo número:");
+let n2 = Number(ler());
+
+let soma = somar(n1, n2);
+
+console.log("A soma de " + n1 + " + " + n2 + " é " + soma);

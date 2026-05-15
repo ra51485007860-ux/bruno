@@ -1,11 +1,13 @@
-import prompt from 'prompt-sync'
+import prompt from "prompt-sync";
 let ler = prompt();
 
-console.log('Informe o numero:');
-let n1 = Number(ler());
-
-function mult(a) {
-    return a * 2;
+function calcularDobro(numero) {
+    return numero * 2;
 }
 
-console.log("O dobro é " + n1 * 2 );
+console.log("Informe um número:");
+let numero = Number(ler());
+
+let dobro = calcularDobro(numero);
+
+console.log("O dobro de " + numero + " é " + dobro);
